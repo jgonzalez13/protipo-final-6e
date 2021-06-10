@@ -1,0 +1,68 @@
+.home {
+  height: 617px;
+  position: relative;
+  height: 617px;
+  z-index: 1;
+  background-color: transparent;
+
+  h1 {
+    width: 470px;
+    text-align: center;
+  }
+
+  &--clouds {
+    transition: opacity 1s ease-in-out 0s;
+    height: 355px;
+    position: absolute;
+    left: 0px;
+    pointer-events: none;
+    z-index: -1;
+    width: 100%;
+    overflow-x: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 200vw;
+      height: 100%;
+      background-image: url("../../assets/img/clouds.png");
+      background-repeat: repeat-x;
+      background-size: contain;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-duration: 60s;
+      animation-delay: -30s;
+      animation-name: moveClouds;
+    }
+  }
+
+  &--svg {
+    top: 42px;
+    background: linear-gradient(to top, rgb(247, 247, 247) 56px, transparent 56px);
+    position: absolute;
+    transition: opacity 1s ease-in-out 0s;
+    pointer-events: none;
+  }
+
+  &--left {
+    background: url("../../assets/img/home-left.svg") left bottom / 615px 471px no-repeat
+  }
+
+  &--right {
+    background: url("../../assets/img/home-right.svg") right bottom / 615px 471px no-repeat
+  }
+}
+
+@keyframes moveClouds {
+  0% {
+    margin-left: 800px;
+  }
+
+	100% {
+    margin-left: -800px;
+  }
+}
+
+
