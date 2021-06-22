@@ -1,7 +1,5 @@
-import Routes from 'routes/Routes';
-
 const App = () => (
-  <Routes />
+  <h1>Start to code.</h1>
 );
 
 export default App;
