@@ -1,0 +1,51 @@
+@import "styles/base/variables";
+
+.header {
+  width: 100%;
+  padding: 45px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    display: inline-block;
+  }
+
+  span {
+    &::after {
+      background-image: url("../../styles/assets/search.png");
+      background-size: cover;
+      content: "";
+      display: inline-block;
+      height: 30px;
+      margin-left: -30px;
+      width: 30px;
+    }
+  }
+}
+
+.header-btn-container {
+  &__button {
+    background-color: $color-red;
+    width: 108px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 4px;
+
+    &:first-child {
+      margin-right: 28px;
+      background-image: url("../../styles/assets/Vector.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:last-child {
+      background-image: url("../../styles/assets/filter.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

@@ -1,8 +1,11 @@
 import Layout from 'layout/Layout';
+import Header from 'components/Header/Header';
+import Footer from 'components/Footer/Footer';
 
 const App = () => (
   <Layout>
-    <h1>Start to code.</h1>
+    <Header />
+    <Footer />
   </Layout>
 );
 
