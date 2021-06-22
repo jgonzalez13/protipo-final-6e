@@ -1,3 +1,5 @@
+@import "./variables";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +12,7 @@ html {
 }
 
 body {
+  color: $color-gray-bold;
   box-sizing: border-box;
   height: 100%;
   width: 100%;
